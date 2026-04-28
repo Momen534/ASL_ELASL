@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Tajawal:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Tajawal", system-ui, sans-serif;
+
+  --color-stone-50: #FDFBF7;
+  --color-stone-100: #F5F1EA;
+  --color-stone-200: #EAE3D5;
+  --color-stone-300: #DCD0BD;
+  --color-stone-400: #C2B39E;
+  --color-stone-500: #9E8F7A;
+  --color-stone-600: #7A6A58;
+  --color-stone-700: #5C4F40;
+  --color-stone-800: #4A3A3A;
+  --color-stone-900: #3C2F2F;
+
+  --color-amber-50: #FFF9ED;
+  --color-amber-100: #FEF0D4;
+  --color-amber-200: #FDE0A6;
+  --color-amber-300: #FBC971;
+  --color-amber-400: #F8AF3C;
+  --color-amber-500: #F49113;
+  --color-amber-600: #D97706;
+  --color-amber-700: #B45309;
+  --color-amber-800: #92400E;
+  --color-amber-900: #78350F;
+
+  --shadow-card: 0 10px 30px -15px rgba(60, 47, 47, 0.15);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-stone-50);
+  color: var(--color-stone-900);
+}
+
+.honey-gradient {
+  background: linear-gradient(135deg, var(--color-amber-600) 0%, var(--color-amber-700) 100%);
+}
+
+.badge-green {
+  background-color: #E8F0E5;
+  color: #2D4A22;
+}
+
+.glass-nav {
+  background: rgba(253, 251, 247, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(60, 47, 47, 0.1);
+}
+
+.btn-primary {
+  background-color: var(--color-stone-900);
+  color: var(--color-stone-50);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary {
+  border: 1px solid var(--color-stone-900);
+  color: var(--color-stone-900);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
